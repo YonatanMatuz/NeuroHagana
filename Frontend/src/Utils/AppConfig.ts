@@ -3,12 +3,12 @@ class AppConfig {
     // Routes are in objects, it is not currently necessary as there arent many routes per object, but it is cleaner to use in services,
     // And will be easier to scale + read as more routes are added
     
-    REACT_APP_API_URL = process.env.REACT_APP_API_URL;
+    REACT_APP_API_URL = "http://localhost:4000";
 
     // InfoTopic routes
     public infoTopics = {
         baseUrl: this.REACT_APP_API_URL + "/api/infotopics/",
-        fetchAllInCategoryUrl: this.REACT_APP_API_URL + "/api/infotopics/by-categories/",
+        fetchAllInCategoryUrl: this.REACT_APP_API_URL + "/api/infotopics/by-category/",
         getCategoriesUrl: this.REACT_APP_API_URL + "/api/infotopics/categories/",
     }
 
@@ -33,5 +33,3 @@ class AppConfig {
 const appConfig = new AppConfig();
 
 export default appConfig;
-
-// terraform

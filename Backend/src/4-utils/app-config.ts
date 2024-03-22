@@ -1,8 +1,16 @@
 class AppConfig {
 
-    public serverUrl = "https://neuro-api.azurewebsites.net";
+    public mySqlHost = "localhost";
 
-    public imagesUrl = this.serverUrl + "/api/images/";
+    public mySqlUser = "root";
+
+    public mySqlPassword = "";
+
+    public mySqlDatabase = "neuro_hagana";
+
+    public serverUrl = "http://localhost:4000/";
+
+    public imagesUrl = this.serverUrl + "api/images/";
 }
 
 const appConfig = new AppConfig();

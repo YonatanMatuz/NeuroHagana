@@ -1,0 +1,15 @@
+.Navbar img {
+    width: 218px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+}
+
+.Navbar button {
+    color: black;
+}
+
+.Navbar .gridItem {
+    height: 100%;
+}
+
+

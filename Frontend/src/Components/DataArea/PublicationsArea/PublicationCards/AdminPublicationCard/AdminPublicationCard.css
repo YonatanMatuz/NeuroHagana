@@ -1,0 +1,8 @@
+.AdminPublicationCard {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	width: max-content;
+    margin: auto;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,14 @@
+.ThePlatform {
+	margin: auto;
+	margin-top: 15vh;
+}
+
+.ThePlatform img {
+	width: 100%;
+	margin: 20px auto;
+}
+
+.ThePlatform .generalCard {
+	margin: 20px auto;
+	justify-content: space-evenly;
+}

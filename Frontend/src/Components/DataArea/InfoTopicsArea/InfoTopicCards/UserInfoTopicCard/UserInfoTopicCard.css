@@ -1,0 +1,28 @@
+.UserInfoTopicCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+}  
+
+.UserInfoTopicCard.reverse-layout .generalCard {
+    flex-direction: row-reverse; 
+}
+
+.UserInfoTopicCard.reverse-layout .generalCard img {
+	transform: translate(2vw, 2vw); 
+}
+
+.UserInfoTopicCard.reverse-layout .animatedCard {
+    animation: slideInFromLeft 1.2s ease-in-out;
+}
+
+@media (max-width: 900px) {
+    .UserInfoTopicCard.reverse-layout .generalCard {
+        flex-direction: column;
+    }
+}
+
+
+

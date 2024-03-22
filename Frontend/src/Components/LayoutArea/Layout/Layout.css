@@ -1,0 +1,17 @@
+.Layout {
+	height: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+.mainContent {
+    overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    min-height: 100vh;
+}
+
+.Layout::-webkit-scrollbar {
+    display: none;
+}

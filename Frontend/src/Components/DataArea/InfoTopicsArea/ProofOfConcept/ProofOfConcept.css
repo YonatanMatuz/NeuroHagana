@@ -1,0 +1,40 @@
+.ProofOfConcept {
+	margin-top: 15vh;
+	margin-bottom: 15vh;;
+}
+
+.ProofOfConcept button {
+	margin: 15px;
+}
+
+.ProofOfConcept .textBox {
+	width: 60rem;
+	margin-left: 30px;
+	text-align: left;
+}
+
+.ProofOfConcept .videoContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 165vh;
+	margin: 20px auto;
+}
+
+.ProofOfConcept .generalCard {
+	margin: 30px auto;
+}
+
+@media (max-width: 1200px) {
+	.ProofOfConcept .videoContainer {
+		flex-direction: column;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1536px) {
+	.ProofOfConcept .videoContainer {
+		width: 130vh;
+	}
+} 
+
+

@@ -1,0 +1,12 @@
+.HomeCard .generalCard {
+	margin: 30px auto;
+    margin-bottom: 10vh;
+}
+
+.HomeCard .cardDescription {
+    margin-top: 4vh;
+}
+
+.HomeCard .imageBackgroundEffect {
+    margin-top: -1vh;
+}

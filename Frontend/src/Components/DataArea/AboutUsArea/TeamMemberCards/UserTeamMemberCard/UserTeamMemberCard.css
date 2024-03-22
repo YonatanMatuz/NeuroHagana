@@ -1,0 +1,11 @@
+.UserTeamMemberCard {
+    margin: 10px auto;
+    width: 33%;
+}
+
+@media (max-width: 900px) {
+    .UserTeamMemberCard {
+        width: 100%;
+    }
+}
+

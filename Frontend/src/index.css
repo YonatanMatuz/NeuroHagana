@@ -1,0 +1,129 @@
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  font-size: x-large;
+  background-color: #fafafa;
+  color: black;
+  overflow-y: hidden;
+  font-family: 'HansKendrick-Regular', sans-serif;
+}
+
+a {
+  color: black;
+}
+
+@font-face {
+  font-family: 'HansKendrick-Regular';
+  src: url('./Assets/Fonts/HansKendrick-Regular.otf') format('opentype');
+}
+
+/* The following CSS classes are general design for universal and re-appearing componenets so they are done once here to avoid code duplication */
+/* Specific changes are applied within the components css file respectively */
+
+/* --------------------------- Forms ------------------------------- */
+
+.FormBox {
+  width: 550px;
+  background: linear-gradient(to top right, #e6e3e3, #e1f4fc, #f5f4f4);
+  margin: auto;
+  padding: 30px;
+  border: 3px solid #adaaaa;
+  border-radius: 15px;
+  margin-top: 15vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.FormContents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Container holding admin selected image + button for submitting the image */
+.imageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.selectedImage {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.selectedImage img {
+  width: 100px;
+  height: 100px;
+}
+
+.imageBackgroundEffect {
+  margin: auto;
+  background-color: #efeae6;
+}
+
+.imageBackgroundEffect > img {
+  width: 100%;
+  height: 100%;
+  transform: translate(-2vw, 2vw);
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+/* --------------------------- Cards ------------------------------- */
+
+.generalCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  padding: 30px;
+}
+
+.cardContent {
+  text-align: left;
+}
+
+/* card animations */
+
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.animatedCard {
+  animation: slideInFromRight 1.2s ease-in-out; 
+}
+
+
+/* --------------------------- appears twice or more ------------------------------- */
+
+.headerTitle {
+  background-color: rgba(255,255,255,0.3);
+  width: 130vh;
+  padding: 10px;
+  margin: auto;
+  color: #262262;
+  position: relative;
+}
+
+

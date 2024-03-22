@@ -1,0 +1,58 @@
+services:
+  
+  neurohagana-database-service:
+
+    image: yonatanmatuz/neurohagana-database-image:1.0.5
+
+    build: ./Database
+
+    container_name: neurohagana-database-container
+
+    ports:
+      - 3306:3306
+
+    restart: unless-stopped
+
+    environment:
+      - MYSQL_HOST=neurohagana-database-service
+      - MYSQL_DATABASE=neuro_hagana
+      - MYSQL_USER=yonatan
+      - MYSQL_PASSWORD=yonatan123
+      - MYSQL_ROOT_PASSWORD=root
+    
+    # volumes:
+    #   - neurohagana-db:/var/lib/mysql
+
+
+  neurohagana-backend-service: 
+
+    image: yonatanmatuz/neurohagana-backend-image:1.0.2
+
+    build: ./Backend
+
+    container_name: neurohagana-backend-container
+
+    restart: unless-stopped
+
+    environment:
+      - MYSQL_HOST=neurohagana-database-service
+      - MYSQL_DATABASE=neuro_hagana
+      - MYSQL_USER=yonatan
+      - MYSQL_PASSWORD=yonatan123
+
+  neurohagana-frontend-service:
+
+    image: yonatanmatuz/neurohagana-frontend-image:1.0.3
+
+    build: ./Frontend
+
+    container_name: neurohagana-frontend-container
+
+    ports:
+      - 443:3000
+    
+    restart: unless-stopped
+
+
+# volumes:
+#   neurohagana-db:

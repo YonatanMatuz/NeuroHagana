@@ -1,0 +1,17 @@
+.PageNotFound {
+	display: flex;
+    flex-direction: column;
+    width: 100vh;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.PageNotFound > img {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .PageNotFound {
+        width: 50vh;
+    }
+}

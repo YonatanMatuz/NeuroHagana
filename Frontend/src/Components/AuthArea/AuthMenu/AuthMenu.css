@@ -1,0 +1,7 @@
+.AuthMenu {
+	position: absolute;
+    right: 0;
+    margin-right: 10vh;
+    display: flex;
+    flex-direction: column;
+}

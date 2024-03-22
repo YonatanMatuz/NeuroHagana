@@ -1,0 +1,10 @@
+.AdminTeamMemberCard {
+    margin: 20px auto;
+    width: 33%;
+}
+
+@media (max-width: 900px) {
+    .AdminTeamMemberCard {
+        width: 100%;
+    }
+}

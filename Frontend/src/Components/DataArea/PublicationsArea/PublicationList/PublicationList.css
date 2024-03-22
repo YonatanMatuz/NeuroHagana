@@ -1,0 +1,21 @@
+.PublicationList .headerBox {
+    display: flex;
+    background-image: url('../../../../Assets/Images/PublicatonHeadeImage2.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 9vh;
+    height: 50vh;
+}
+
+.PublicationList .headerTitle {
+    width: 100vh;
+}
+
+.PublicationList .headerTitle p {
+    font-size: 3.2rem;
+}
+@media (max-width: 850px) {
+    .PublicationList .headerTitle p {
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,39 @@
+.AdminInfoTopicCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 160vh;
+    margin: auto;
+    margin-bottom: 50px;
+}
+  
+
+.AdminInfoTopicCard.reverse-layout .generalCard {
+    flex-direction: row-reverse; 
+}
+
+.AdminInfoTopicCard.reverse-layout .generalCard img {
+	transform: translate(2vw, 2vw); 
+}
+
+.AdminInfoTopicCard.reverse-layout .animatedCard {
+    animation: slideInFromLeft 1.2s ease-in-out; 
+}
+
+@media (max-width: 600px) {
+    .AdminInfoTopicCard.reverse-layout .generalCard {
+        flex-direction: column-reverse;
+    }
+}
+
+.AdminInfoTopicCard .cardContent {
+    width: 750px;
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.2vw;
+    margin: 3vh;
+}
+
+.adminIcon {
+    margin-top: 1vh;
+}

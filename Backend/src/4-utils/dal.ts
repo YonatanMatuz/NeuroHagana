@@ -1,11 +1,10 @@
 import mysql from "mysql";
-import appConfig from "./app-config";
 
 const connection = mysql.createPool({
-    host: appConfig.mySqlHost,
-    user: appConfig.mySqlUser,
-    password: appConfig.mySqlPassword,
-    database: appConfig.mySqlDatabase
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DATABASE
 });
 
 function execute(sql: string, values?: any[]): Promise<any> {

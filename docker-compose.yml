@@ -2,7 +2,7 @@ services:
   
   neurohagana-database-service:
 
-    image: yonatanmatuz/neurohagana-database-development-image:1.0
+    image: yonatanmatuz/neurohagana-database-production-image:latest
 
     build: ./Database
 

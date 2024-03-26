@@ -1,6 +1,6 @@
 class AppConfig {
 
-    public serverUrl = "https://api.neurohagana.com/";
+    public serverUrl = process.env.SERVER_URL;
 
     public imagesUrl = this.serverUrl + "api/images/";
 }

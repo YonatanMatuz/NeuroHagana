@@ -12,18 +12,7 @@ services:
       - 3306:3306
 
     restart: unless-stopped
-
-    environment:
-      - MYSQL_HOST=localhost
-      - MYSQL_DATABASE=neuro_hagana
-      - MYSQL_USER=yonatan
-      - MYSQL_PASSWORD=yonatan123
-      - MYSQL_ROOT_PASSWORD=root
     
-    # volumes:
-    #   - neurohagana-db:/var/lib/mysql
-
-
   neurohagana-backend-service: 
 
     image: yonatanmatuz/neurohagana-backend-development-image:1.0
@@ -37,12 +26,6 @@ services:
     ports:
       - 4000:4000
 
-    environment:
-      - MYSQL_HOST=neurohagana-database-service
-      - MYSQL_DATABASE=neuro_hagana
-      - MYSQL_USER=yonatan
-      - MYSQL_PASSWORD=yonatan123
-
   neurohagana-frontend-service:
 
     image: yonatanmatuz/neurohagana-frontend-production-image:latest
@@ -55,7 +38,3 @@ services:
       - 3000:3000
     
     restart: unless-stopped
-
-
-# volumes:
-#   neurohagana-db:

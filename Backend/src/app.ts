@@ -24,4 +24,4 @@ server.use("/api", publicationRoutes);
 server.use(routeNotFound);
 server.use(catchAll);
 
-server.listen(4000, () => console.log("Server up"));
+server.listen(process.env.PORT, () => console.log("Server up"));

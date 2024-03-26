@@ -316,7 +316,7 @@ ALTER TABLE `infoTopics`
 -- Constraints for table `teamMembers`
 --
 ALTER TABLE `teamMembers`
-  ADD CONSTRAINT `teamMembers_ibfk_1` FOREIGN KEY (`categoryId`) REFERENCES `teamMembercategories` (`categoryId`);
+  ADD CONSTRAINT `teamMembers_ibfk_1` FOREIGN KEY (`categoryId`) REFERENCES `teamMemberCategories` (`categoryId`);
 
 --
 -- Constraints for table `users`

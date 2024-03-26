@@ -15,7 +15,7 @@ services:
     
   neurohagana-backend-service: 
 
-    image: yonatanmatuz/neurohagana-backend-development-image:1.0
+    image: yonatanmatuz/neurohagana-backend-production-image:latest
 
     build: ./Backend
 

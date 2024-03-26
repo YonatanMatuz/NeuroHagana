@@ -3,29 +3,29 @@ class AppConfig {
     // Routes are in objects, it is not currently necessary as there arent many routes per object, but it is cleaner to use in services,
     // And will be easier to scale + read as more routes are added
     
-    REACT_APP_API_URL = "http://localhost:4000";
+    url = "https://api.neurohagana.com";
 
     // InfoTopic routes
     public infoTopics = {
-        baseUrl: this.REACT_APP_API_URL + "/api/infotopics/",
-        fetchAllInCategoryUrl: this.REACT_APP_API_URL + "/api/infotopics/by-category/",
-        getCategoriesUrl: this.REACT_APP_API_URL + "/api/infotopics/categories/",
+        baseUrl: this.url + "/api/infotopics/",
+        fetchAllInCategoryUrl: this.url+ "/api/infotopics/by-category/",
+        getCategoriesUrl: this.url + "/api/infotopics/categories/",
     }
 
     // TeamMembers main routes
     public teamMembers = {
-        baseUrl: this.REACT_APP_API_URL + "/api/team-members/",
-        getCategoriesUrl: this.REACT_APP_API_URL + "/api/team-members/categories",
+        baseUrl: this.url + "/api/team-members/",
+        getCategoriesUrl: this.url + "/api/team-members/categories",
     }
 
     // Publications main routes
     public publications = {
-        baseUrl: this.REACT_APP_API_URL + "/api/publications/",
+        baseUrl: this.url + "/api/publications/",
     }
 
     // Authentication & Authorization
     public auth = {
-        loginUrl: this.REACT_APP_API_URL + "/api/auth/login/",
+        loginUrl: this.url + "/api/auth/login/",
     }
 
 }

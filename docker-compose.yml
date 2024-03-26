@@ -45,7 +45,7 @@ services:
 
   neurohagana-frontend-service:
 
-    image: yonatanmatuz/neurohagana-frontend-development-image:1.0
+    image: yonatanmatuz/neurohagana-frontend-production-image:latest
 
     build: ./Frontend
 

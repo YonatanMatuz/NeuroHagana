@@ -39,7 +39,6 @@
 
     .Landing .landingTitle {
         position: absolute;
-        top: -6rem;
         left: 50%;
         transform: translateX(-50%);
     }

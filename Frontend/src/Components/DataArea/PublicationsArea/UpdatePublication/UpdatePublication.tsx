@@ -156,7 +156,10 @@ function UpdatePublication(): JSX.Element {
 
                         <div className="selectedImage">
 
-                            <Typography variant="body2"> Selected Image: </Typography>
+                            <Typography variant="body2"> 
+                                Selected Image: 
+                            </Typography>
+
                             <img src={selectedImage} alt="Selected" />
 
                         </div>
@@ -166,7 +169,6 @@ function UpdatePublication(): JSX.Element {
                     type="file"
                     style={{ display: 'none' }}
                     onChange={handleImageChange}
-                    required
                     />
                     
                 </div>

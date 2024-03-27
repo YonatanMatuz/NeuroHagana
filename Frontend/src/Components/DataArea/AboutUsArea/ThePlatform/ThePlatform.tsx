@@ -16,7 +16,7 @@ function ThePlatform(): JSX.Element {
             {/* Main page card */}
             <Card className="generalCard" sx={{ width: {xl: '155vh', lg: '135vh', md: '100vh', sm: '60vh', xs: '35vh'}, flexDirection: { lg: 'row', sm: 'column', xs: 'column' } }}>
 
-                <CardContent className="cardContent" sx={{ textAlign: 'justify'}}>
+                <CardContent className="cardContent" sx={{ textAlign: {xl: "justify"} }}>
 
                     <Typography variant="body1">
                         NeuroHagana Ltd is creating a platform capable of reducing neurological damage in several cases of new acute Central Nervous System (CNS) injuries.

@@ -18,7 +18,7 @@ function UserInfoTopicCard(props: UserInfoCardProps): JSX.Element {
             {/* Main container */}
             <Card className="generalCard animatedCard" sx={{ width: {xl: '165vh', lg: '135vh', md: '100vh', sm: '60vh', xs: '32vh'}, flexDirection: { lg: 'row', sm: 'column',xs: 'column' } }}>
 
-                <CardContent className="cardContent" sx={{ width: {xl: '80vh', lg: '60vh', md: '100vh', sm: '60vh', xs: '29vh'}, textAlign: 'justify'}}>
+                <CardContent className="cardContent" sx={{ width: {xl: '80vh', lg: '60vh', md: '100vh', sm: '60vh', xs: '29vh'}, textAlign: {xl: "justify"} }}>
                     
                     {/* Title */}
                     <Typography variant="h2">{props.infoTopic.title}</Typography>

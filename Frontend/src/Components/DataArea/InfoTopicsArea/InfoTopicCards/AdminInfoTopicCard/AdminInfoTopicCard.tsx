@@ -100,7 +100,7 @@ function AdminInfoTopicCard(props: AdminInfoCardProps): JSX.Element {
 
                 </Box>
 
-                <CardContent className="cardContent" sx={{ width: {xl: '80vh'}, textAlign: {xl: "justify"} }}>
+                <CardContent className="cardContent" sx={{ width: {xl: '80vh'} }}>
                     
                     {/* Title */}
                     <Typography variant="h2">{props.infoTopic.title}</Typography>

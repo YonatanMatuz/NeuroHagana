@@ -36,7 +36,7 @@ function HomeCard(props: HomeCardProps): JSX.Element {
                     </Typography>
 
                     {/* Description */}
-                    <Typography variant="body1" className="cardDescription" sx={{ textAlign: {xl: "justify"}}}>
+                    <Typography variant="body1" className="cardDescription">
                         {props.description}
                     </Typography>
 

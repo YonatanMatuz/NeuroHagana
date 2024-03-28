@@ -14,18 +14,6 @@ interceptorService.create();
 
 let theme = createTheme({
   typography: {
-    h1: {
-      fontWeight: 300,
-      color: '#262262', 
-      marginTop: '0.5rem',
-      marginBottom: '1rem',
-    },
-    body1: {
-      color: '#000', 
-      lineHeight: 1.5,
-      verticalAlign: 'auto',
-      wordBreak: 'break-all',
-    },
     body2: {
       fontSize : '1.1rem',
       lineHeight: 1.3,
@@ -36,7 +24,6 @@ let theme = createTheme({
       textAlign: 'center',
       color: '#000', 
     }
-    
   },
   palette: {
     secondary: {

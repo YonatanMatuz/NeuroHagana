@@ -24,7 +24,7 @@ function ProofOfConcept(): JSX.Element {
             {/* Static card */}
             <Card className="generalCard animatedCard" sx={{ width: {xl: '155vh', lg: '135vh', md: '100vh', sm: '60vh', xs: '32vh'}, flexDirection: { lg: 'row', sm: 'column',xs: 'column' } }}>
     
-                <CardContent className="cardContent" sx={{ width: {xl: '80vh', lg: '60vh', md: '100vh', sm: '60vh', xs: '29vh'}, textAlign: {xl: "justify"} }}>
+                <CardContent className="cardContent" sx={{ width: {xl: '80vh', lg: '60vh', md: '100vh', sm: '60vh', xs: '29vh'} }}>
 
                     <Typography variant="body1">
                        <li> The efficacy of the treatment has been proved in mice hemisection, compression, and contusion models of Spinal Cord Injury in the laboratories of Tel Aviv University.</li>

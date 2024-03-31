@@ -1,6 +1,6 @@
 import { Card, CardContent, Paper, Typography } from "@mui/material";
 import "./ThePlatform.css";
-import thePlatformImage from "../../../../Assets/Images/ThePlatform.png"
+import thePlatformImage from "../../../../Assets/Images/ThePlatform.jpeg"
 
 function ThePlatform(): JSX.Element {
 

@@ -26,13 +26,13 @@ function UserTeamMemberCard(props: UserTeamMemberProps): JSX.Element {
         <div className="UserTeamMemberCard">
             
             {/* Main container */}
-            <Card sx={{ maxWidth: 345, borderRadius: "35px", margin: 'auto' }} className="card">
+            <Card sx={{ maxWidth: 410, borderRadius: "35px", margin: 'auto' }} className="card">
 
                 {/* Enables clicking anywhere to display description */}
                 <CardActionArea onClick={handleClickOpen}>
 
                     {/* Avatar */}
-                    <Avatar src={props.teamMember.imageUrl} sx={{ width: 250, height: 250, margin: "auto", marginTop: "10px", boxShadow: "1px 1px 3px 1px"}}/>
+                    <Avatar src={props.teamMember.imageUrl} sx={{ width: {xl: 250, lg: 200, xs: 110}, height: {xl: 250, lg: 200, xs: 110}, margin: "10px auto", boxShadow: "1px 1px 3px 1px"}}/>
 
                     <CardContent>
 

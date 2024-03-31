@@ -3,9 +3,19 @@
     width: 33%;
 }
 
+.UserTeamMemberCard h2 {
+    font-size: 1.5rem;
+}
+
 @media (max-width: 900px) {
     .UserTeamMemberCard {
         width: 100%;
+        margin: auto;
+    }
+
+    .UserTeamMemberCard h2 {
+        font-size: 0.8rem;
     }
 }
+
 

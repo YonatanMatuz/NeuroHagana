@@ -8,7 +8,7 @@ function Landing(): JSX.Element {
     return (
 
         <div className="Landing">
-
+            
             <video autoPlay muted loop playsInline className="headerVideo">
                 <source src={landingVideo} />
                 Your browser does not support the video tag.
